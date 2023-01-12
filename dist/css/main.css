@@ -1,0 +1,23 @@
+html {
+  font-size: 12px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #389e31;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5; }
+
+h2 {
+  margin: 0;
+  font-weight: 500; }
+  h2.secondary {
+    font-size: 2rem;
+    color: #9e6431; }
+  h2.extra {
+    font-size: 2rem;
+    color: #97319e; }

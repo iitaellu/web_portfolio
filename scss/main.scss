@@ -1,0 +1,33 @@
+$primary-color: #389e31;
+$secondary-color: #9e6431;
+$extra-color: #97319e;
+
+
+html{
+    font-size: 12px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary-color;
+    color: white;
+    height:100%;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 500;
+    &.secondary {
+        font-size: 2rem;
+        color: $secondary-color;
+    }
+    &.extra {
+        font-size: 2rem;
+        color: $extra-color;
+    }
+}

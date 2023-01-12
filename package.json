@@ -1,0 +1,15 @@
+{
+  "name": "project_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive web portfolio as course project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Ida Kirveskoski",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2",
+    "sass": "^1.57.1"
+  }
+}
