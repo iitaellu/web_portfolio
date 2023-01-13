@@ -1,17 +1,5 @@
-$primary-color: #757575;
-$secondary-color:#21BA47;
-$extra-color:  #C6762F;
+@import 'config';
 
-
-//If needed
-/*@mixin easeOut {
-    transition: all 0.5s ease-out;
-}*/
-
-
-html{
-    font-size: 12px;
-}
 * {
     box-sizing: border-box;
 }
