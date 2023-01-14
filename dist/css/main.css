@@ -100,7 +100,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -142,6 +142,25 @@ main {
     background: #4f4f4f;
     padding: 0.5rem;
     border-bottom: #21BA47 5px solid; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-top: 3rem;
+    transition: all 0.3s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #C6762F;
+      color: black; }
+      .boxes div:hover span {
+        color: black; }
 
 #main-footer {
   text-align: center;

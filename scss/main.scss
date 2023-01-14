@@ -55,7 +55,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height:calc(100vh - 60px);
     .icons {
         margin-top: 1rem;
 
@@ -136,6 +136,36 @@ main {
         border-bottom: $secondary-color 5px solid;
     }
 }
+
+// contact page
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px white solid;
+        padding: 1.5rem 2.5rem;
+        margin-top: 3rem;
+        @include easeOut;
+        
+        &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $extra-color;
+        color: set-text-color($extra-color);
+            span{
+                color: set-text-color($extra-color);
+            }
+        }
+    }
+
+    
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
