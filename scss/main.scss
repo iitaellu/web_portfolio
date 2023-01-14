@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 body {
     background-image: linear-gradient(to bottom right, $primary-color, darken($secondary-color,20));
     //background: $primary-color;
-    color: white;
+    color: set-text-color($primary-color);
     height:100%;
     margin: 0; 
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ h1,h2,h3 {
     }
     &.sm-heading {
         font-size: 2rem;
-        color: white;
+        color: set-text-color($primary-color);
     }
     &.extra {
         font-size: 2rem;
@@ -36,7 +36,7 @@ h1,h2,h3 {
 }
 
 a {
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -102,3 +102,46 @@ main {
         }
     }
 }
+
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio'
+    'grap1 grap2';
+    grid-template-columns: repeat(2, 1fr);
+    
+    .bio-image{
+    grid-area: bioimage;
+    margin: auto;
+    border: $secondary-color 3px solid;
+    }
+
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem
+    }
+
+    .sosial-skills{
+        grid-area: grap1;
+    }
+
+    .language-skills{
+        grid-area: grap2;
+    }
+
+    .skills {
+        background: lighten($primary-color,5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: darken($secondary-color, 30);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+@import 'mobile';

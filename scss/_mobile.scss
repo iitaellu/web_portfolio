@@ -32,9 +32,18 @@
     }
 
     .menu-nav {
-        height: 75vh;
+        height: 400;
     }
 
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'grap1' 
+        'grap2';
+
+        grid-template-columns: 1fr;
+    }
 }
 
 //Smartphones

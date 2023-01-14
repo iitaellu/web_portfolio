@@ -1,4 +1,5 @@
-$primary-color: #757575;
+$primary-color: #424242;
+//$primary-color: #757575;
 $secondary-color:#21BA47;
 //$secondary-color: #33db5d;
 $extra-color:  #C6762F;
@@ -13,8 +14,18 @@ html{
     font-size: 12px;
 }
 
-// Media query mixins
+//Set text Color
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+        @return black;
+    }
+    @else {
+        @return white;
+    }
 
+}
+
+// Media query mixins
 @mixin mediaSm{
     @media screen and (max-width: 500px) {
         @content;
