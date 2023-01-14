@@ -4,6 +4,26 @@
 html {
   font-size: 12px; }
 
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -5px); }
+
 * {
   box-sizing: border-box; }
 
@@ -48,6 +68,17 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #C6762F; }
+  main .pdfs h2 {
+    margin-top: 4rem; }
+    main .pdfs h2 .text-cv {
+      color: #21BA47; }
+    main .pdfs h2 .text-aplication {
+      color: #21BA47; }
+  main .pdfs a {
+    padding: 0.4rem;
+    font-size: 1.3rem; }
+    main .pdfs a:hover {
+      color: #C6762F; }
   main#home {
     overflow: hidden; }
     main#home h1 {
