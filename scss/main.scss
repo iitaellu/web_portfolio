@@ -304,11 +304,16 @@ main {
 .projects {
     margin-top: 1rem;
     display: grid;
-    grid-gap: 0.7rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
 
+    h2 {
+        font-size: 2rem;
+    }
     img {
-        width: 100%;
+        height: 500px;
+        margin-top: 3px;
+        width: 300;
         border: 3px white solid;
 
         &:hover {
@@ -316,6 +321,11 @@ main {
             border-color: $secondary-color;
             @include easeOut;        }
     }
+    p {
+        height: 160px;
+        font-size: 1.3rem;
+        padding: 3px 5px;
+    };
 }
 
 
