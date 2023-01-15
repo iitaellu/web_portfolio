@@ -112,6 +112,8 @@ main {
     main .pdfs h2 .text-cv, main .pdfs h2 .text-aplication {
       color: #21BA47;
       font-weight: 600; }
+  main .pdfs .pdf-items {
+    list-style: none; }
   main .pdfs a {
     padding: 0.4rem;
     font-size: 1.3rem; }
