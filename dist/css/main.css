@@ -148,7 +148,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  text-align: center; }
   .btn:hover, .btn-facts:hover, .btn-git:hover {
     background: #C6762F;
     color: black; }
@@ -189,6 +190,39 @@ main {
     padding: 0.5rem;
     border-bottom: #21BA47 5px solid; }
     .facts-about .Hobbies h3, .facts-about .facts h3 {
+      text-align: center;
+      background: #424242; }
+
+.work-info {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'img1 work1 work1 work1' 'img2 work2 work2 work2' 'img3 work3 work3 work3' 'img4 work4 work4 work4' 'img5 work5 work5 work5' 'img6 work6 work6 work6' 'img7 work7 work7 work7';
+  grid-template-columns: repeat(4, 1fr); }
+  .work-info .image2 {
+    grid-area: img2; }
+  .work-info .image3 {
+    grid-area: img3; }
+  .work-info .work1 {
+    grid-area: work1; }
+  .work-info .work2 {
+    grid-area: work2; }
+  .work-info .work3 {
+    grid-area: work3; }
+  .work-info .work4 {
+    grid-area: work4; }
+  .work-info .work5 {
+    grid-area: work5; }
+  .work-info .work6 {
+    grid-area: work6; }
+  .work-info .work7 {
+    grid-area: work7; }
+  .work-info .works {
+    font-size: 1.5rem;
+    background: #4f4f4f;
+    padding: 0.5rem;
+    border-bottom: #21BA47 5px solid; }
+    .work-info .works h3 {
       text-align: center;
       background: #424242; }
 
@@ -264,7 +298,10 @@ main {
     grid-template-columns: repeat(2, 1fr); }
   .facts-about {
     grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .work-info {
+    grid-template-areas: 'img1 work1' 'img2 work2' 'img3 work3' 'img4 work4' 'img5 work5' 'img6 work6' 'img7 work7';
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -273,4 +310,11 @@ main {
     grid-template-columns: 1fr; }
   .facts-about {
     grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: 1fr; }
+  .work-info {
+    grid-template-areas: 'img1' 'work1' 'img2' 'work2' 'img3' 'work3' 'img4' 'work4' 'img' 'work5' 'img6' 'work6' 'img7' 'work7';
+    grid-template-columns: 1fr; }
+    .work-info .images {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
