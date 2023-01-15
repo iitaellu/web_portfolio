@@ -142,9 +142,20 @@ main {
   .about-info .language-skills {
     grid-area: grap2; }
   .about-info .skills {
+    font-size: 1.5rem;
     background: #4f4f4f;
     padding: 0.5rem;
     border-bottom: #21BA47 5px solid; }
+    .about-info .skills h3 {
+      text-align: center;
+      background: #424242; }
+    .about-info .skills h5 {
+      text-align: center;
+      font-weight: 600; }
+    .about-info .skills img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
 
 .btn, .btn-facts, .btn-git {
   font-size: 20px;

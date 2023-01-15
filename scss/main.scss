@@ -137,9 +137,26 @@ main {
     }
 
     .skills {
+        font-size: 1.5rem;
         background: lighten($primary-color,5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+
+        h3 {
+            text-align: center;
+            background: $primary-color;
+        }
+
+        h5{
+            text-align: center;
+            font-weight: 600;
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
