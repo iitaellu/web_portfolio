@@ -103,6 +103,7 @@ main {
     }
 }
 
+//About me
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -137,8 +138,117 @@ main {
     }
 }
 
-// contact page
+// Button Styles
+.btn {
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
 
+    &:hover {
+        background: $extra-color;
+        color: set-text-color($extra-color);
+    }
+}
+
+.btn-facts{
+    @extend .btn;
+    margin-top: 1rem;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+}
+
+
+//Facts page
+.facts-about{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bio bio bio'
+    'head1 head1 head1'
+    'school school other'
+    'head2 head2 head2'
+    'hobby1 hobby2 hobby3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem
+    }
+
+    .header1{
+        grid-area: head1;
+
+    }
+
+    .fact1 {
+        grid-area: school;
+    }
+    .fact2 {
+        grid-area: other;
+    }
+    .header2{
+        grid-area: head2;
+
+    }
+    .hobby1 {
+        grid-area: hobby1;
+    }
+    .hobby2 {
+        grid-area: hobby2;
+    }
+    .hobby3 {
+        grid-area: hobby3;
+    }
+
+    .header{
+        font-size: 2rem;
+        color: $secondary-color;
+    }
+
+    .Hobbies, .facts{
+        font-size: 1.5rem;
+        background: lighten($primary-color,5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+
+        h3 {
+            text-align: center;
+            background: $primary-color;
+        }
+    }
+}
+
+
+//School projects
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: 3px white solid;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;        }
+    }
+}
+
+
+
+.btn-git{
+    @extend .btn;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+}
+
+
+
+// contact page
 .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +258,7 @@ main {
 
     div {
         font-size: 2rem;
-        border: 3px white solid;
+        border: 3px set-text-color($primary-color) solid;
         padding: 1.5rem 2.5rem;
         margin-top: 3rem;
         @include easeOut;
@@ -166,6 +276,8 @@ main {
     
 }
 
+
+
 #main-footer {
     text-align: center;
     padding: 1rem;
@@ -173,5 +285,7 @@ main {
     color: set-text-color($primary-color);
     height: 60px;
 }
+
+
 
 @import 'mobile';

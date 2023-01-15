@@ -143,6 +143,71 @@ main {
     padding: 0.5rem;
     border-bottom: #21BA47 5px solid; }
 
+.btn, .btn-facts, .btn-git {
+  font-size: 20px;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-facts:hover, .btn-git:hover {
+    background: #C6762F;
+    color: black; }
+
+.btn-facts {
+  margin-top: 1rem;
+  background: #424242;
+  color: white; }
+
+.facts-about {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bio bio bio' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
+  grid-template-columns: repeat(3, 1fr); }
+  .facts-about .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .facts-about .header1 {
+    grid-area: head1; }
+  .facts-about .fact1 {
+    grid-area: school; }
+  .facts-about .fact2 {
+    grid-area: other; }
+  .facts-about .header2 {
+    grid-area: head2; }
+  .facts-about .hobby1 {
+    grid-area: hobby1; }
+  .facts-about .hobby2 {
+    grid-area: hobby2; }
+  .facts-about .hobby3 {
+    grid-area: hobby3; }
+  .facts-about .header {
+    font-size: 2rem;
+    color: #21BA47; }
+  .facts-about .Hobbies, .facts-about .facts {
+    font-size: 1.5rem;
+    background: #4f4f4f;
+    padding: 0.5rem;
+    border-bottom: #21BA47 5px solid; }
+    .facts-about .Hobbies h3, .facts-about .facts h3 {
+      text-align: center;
+      background: #424242; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px white solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #21BA47;
+      transition: all 0.3s ease-out; }
+
+.btn-git {
+  background: #424242;
+  color: white; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +234,14 @@ main {
   color: white;
   height: 60px; }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -186,8 +259,18 @@ main {
     height: 400; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'grap1'  'grap2';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .facts-about {
+    grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; }
+  .facts-about {
+    grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
+    grid-template-columns: repeat(1, 1fr); } }
