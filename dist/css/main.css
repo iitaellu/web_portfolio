@@ -123,6 +123,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  margin-top: 1rem;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio' 'grap1 grap2';
@@ -160,6 +161,7 @@ main {
   color: white; }
 
 .facts-about {
+  margin-top: 1rem;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bio bio bio' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
@@ -227,6 +229,7 @@ main {
       background: #424242; }
 
 .projects {
+  margin-top: 1rem;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
@@ -243,6 +246,7 @@ main {
   color: white; }
 
 .boxes {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -262,6 +266,7 @@ main {
         color: black; }
 
 #main-footer {
+  font-size: 15px;
   text-align: center;
   padding: 1rem;
   background-color: #0a3815;
