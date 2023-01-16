@@ -182,13 +182,81 @@ main {
     color: set-text-color($primary-color);
 }
 
-
 //Facts page
+//Slideshow from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/
+
+/*#slideShow {
+        border: 6px white solid;
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin-top: 10px;
+        //padding-top: 10px;
+        //margin: 0 auto;        
+    }
+.slide {
+        
+        float: left;
+        height: 510px;
+        width: 728px;
+
+        p{
+
+            font-size: 4rem;
+            padding: 8px 12px;
+            //position: absolute;
+            bottom: 8px;
+            text-align: center;
+
+        }
+    }
+
+.mySlides{
+    width: calc(728px * 3);
+    animation: slide 20s ease infinite;
+}*/
+
+#slideSet {
+    
+    height: 600px;
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+
+
+    img {
+        border: 6px white solid;
+        height: 600px;
+        width: 800px;
+        object-fit: cover;
+
+    }
+
+    p{
+        font-size: 2rem;
+        //padding: 1px 12px;
+           //position: absolute;
+        bottom: 10px;
+        text-align: center;
+    }
+}
+
+#slideSet > * {
+    animation: 12s slides infinite linear;
+    position: absolute; 
+    opacity: 0.0
+}
+
+#slideSet > *:nth-child(1) {animation-delay: 0s}
+#slideSet > *:nth-child(2) {animation-delay: 4s}
+#slideSet > *:nth-child(3) {animation-delay: 8s}
+
 .facts-about{
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
+    'life life life'
     'bio bio bio'
     'head1 head1 head1'
     'school school other'
@@ -244,6 +312,12 @@ main {
     }
 }
 
+
+@keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: calc(-728px * 1);}
+    60% {margin-left: calc(-728px * 2);}
+}
 .work-info{
     margin-top: 1rem;
     display: grid;

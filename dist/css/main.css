@@ -1,6 +1,18 @@
 html {
   font-size: 12px; }
 
+@keyframes slides {
+  0% {
+    opacity: 0.0; }
+  4% {
+    opacity: 1.0; }
+  33.33% {
+    opacity: 1.0; }
+  37.33% {
+    opacity: 0.0; }
+  100% {
+    opacity: 0.0; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -173,11 +185,70 @@ main {
   background: #424242;
   color: white; }
 
+/*#slideShow {
+        border: 6px white solid;
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin-top: 10px;
+        //padding-top: 10px;
+        //margin: 0 auto;        
+    }
+.slide {
+        
+        float: left;
+        height: 510px;
+        width: 728px;
+
+        p{
+
+            font-size: 4rem;
+            padding: 8px 12px;
+            //position: absolute;
+            bottom: 8px;
+            text-align: center;
+
+        }
+    }
+
+.mySlides{
+    width: calc(728px * 3);
+    animation: slide 20s ease infinite;
+}*/
+#slideSet {
+  height: 600px;
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 70px; }
+  #slideSet img {
+    border: 6px white solid;
+    height: 600px;
+    width: 800px;
+    object-fit: cover; }
+  #slideSet p {
+    font-size: 2rem;
+    bottom: 10px;
+    text-align: center; }
+
+#slideSet > * {
+  animation: 12s slides infinite linear;
+  position: absolute;
+  opacity: 0.0; }
+
+#slideSet > *:nth-child(1) {
+  animation-delay: 0s; }
+
+#slideSet > *:nth-child(2) {
+  animation-delay: 4s; }
+
+#slideSet > *:nth-child(3) {
+  animation-delay: 8s; }
+
 .facts-about {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio bio bio' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
+  grid-template-areas: 'life life life' 'bio bio bio' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
   grid-template-columns: repeat(3, 1fr); }
   .facts-about .bio {
     grid-area: bio;
@@ -207,6 +278,14 @@ main {
     .facts-about .Hobbies h3, .facts-about .facts h3 {
       text-align: center;
       background: #424242; }
+
+@keyframes slide {
+  20% {
+    margin-left: 0px; }
+  40% {
+    margin-left: calc(-728px * 1); }
+  60% {
+    margin-left: calc(-728px * 2); } }
 
 .work-info {
   margin-top: 1rem;
@@ -327,7 +406,16 @@ main {
     grid-template-columns: repeat(1, 1fr); }
   .work-info {
     grid-template-areas: 'img1 work1' 'img2 work2' 'img3 work3' 'img4 work4' 'img5 work5' 'img6 work6' 'img7 work7';
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #slideSet {
+    height: 400px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 70px; }
+    #slideSet img {
+      height: 400px;
+      width: 600px;
+      object-fit: cover; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -343,4 +431,13 @@ main {
     .work-info .images {
       display: block;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; }
+  #slideSet {
+    height: 400px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 70px; }
+    #slideSet img {
+      height: 400px;
+      width: 400px;
+      object-fit: cover; } }

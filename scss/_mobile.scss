@@ -79,6 +79,21 @@
         'img7 work7';
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #slideSet {
+    
+        height: 400px;
+        width: 600px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+
+        img{
+    
+        height: 400px;
+        width: 600px;
+        object-fit: cover;
+        }
+    }
 }
 
 //Smartphones
@@ -127,4 +142,18 @@
         }
     }
 
+    #slideSet {
+    
+        height: 400px;
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+
+        img{
+    
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        }
+    }
 }
