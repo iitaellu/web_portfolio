@@ -72,6 +72,10 @@ html {
     transition: all 0.3s ease-out; }
     .menu .nav-link:hover {
       color: #C6762F; }
+  .menu h1 {
+    font-size: 4rem;
+    background-color: #292929;
+    padding: 0px 100px; }
 
 * {
   box-sizing: border-box; }

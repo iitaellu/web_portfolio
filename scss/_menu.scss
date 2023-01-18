@@ -88,5 +88,11 @@
             color: $extra-color;
         }
     }
+
+    h1{
+        font-size: 4rem;
+        background-color: darken($primary-color, 10);
+        padding: 0px 100px;
+    }
 }
 
