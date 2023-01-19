@@ -183,38 +183,7 @@ main {
 }
 
 //Facts page
-//Slideshow from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/
-
-/*#slideShow {
-        border: 6px white solid;
-        overflow: hidden;
-        height: 510px;
-        width: 728px;
-        margin-top: 10px;
-        //padding-top: 10px;
-        //margin: 0 auto;        
-    }
-.slide {
-        
-        float: left;
-        height: 510px;
-        width: 728px;
-
-        p{
-
-            font-size: 4rem;
-            padding: 8px 12px;
-            //position: absolute;
-            bottom: 8px;
-            text-align: center;
-
-        }
-    }
-
-.mySlides{
-    width: calc(728px * 3);
-    animation: slide 20s ease infinite;
-}*/
+//Help to slides from https://www.w3.org/Style/Examples/007/slideshow.en.html
 
 #slideSet {
     
@@ -257,7 +226,6 @@ main {
     grid-gap: 30px;
     grid-template-areas: 
     'life life life'
-    'bio bio bio'
     'head1 head1 head1'
     'school school other'
     'head2 head2 head2'
@@ -332,12 +300,29 @@ main {
     'img7 work7 work7 work7';
     grid-template-columns: repeat(4, 1fr);
 
+    .image1{
+        grid-area: img1;
+    }
+
     .image2{
         grid-area: img2;
     }
     
     .image3{
         grid-area: img3;
+    }
+    .image4{
+        grid-area: img4;
+    }
+
+    .image5{
+        grid-area: img5;
+    }
+    .image6{
+        grid-area: img6;
+    }
+    .image7{
+        grid-area: img7;
     }
 
     .work1{
