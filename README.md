@@ -13,11 +13,11 @@ Project: Course Project
 
 ### About Website:
 
-This is responsive webportfolio which has six pages in it:
+This is responsive web portfolio which has six pages in it:
 
 -Home page with my name, role, slogan, links to social medias and downloadable cv and application.
 
--About me -page with profile picture, bio and graphics about my coding, sosial and language skills.
+-About me -page with profile picture, bio and graphics about my coding, social and language skills.
 
 -Fan facts -page with slideshow of three picture and five extra info box about me.
 
