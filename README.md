@@ -13,20 +13,19 @@ Project: Course Project
 
 ### About Website:
 
-This is responsive webporfolio which has six pages in it:
+This is responsive webportfolio which has six pages in it:
 
--Home page with my name, role, slogan, links to social medias and downloadable cv and application
+-Home page with my name, role, slogan, links to social medias and downloadable cv and application.
 
 -About me -page with profile picture, bio and graphics about my coding, sosial and language skills.
 
--Fan facts  -page with three pictures slideshow and five extra info box about me
+-Fan facts -page with slideshow of three picture and five extra info box about me.
 
--Contact -page which has my email, phonenumber and address
+-Contact -page which has my email, phonenumber and address.
 
--Work -page to tell shortly my job experience and role in each job. Also either logos of companys 
-or discriptive picture of company
+-Work -page where I to tell shortly my job experience and role in each job. Also either logo of companies or descriptive picture of company.
 
--School -page where is some my school project with picture, short discription and link to each GitHub page
+-School -page where is some my school projects with picture, short description and a link to each GitHub page
 
 ### How To run:
 
@@ -42,4 +41,4 @@ Video: https://drive.google.com/file/d/11YbdRlTlcsduHsckeNKEuoaCIu7hGmHP/view?us
 
 Learning diery:
 
-Ooher course work:
+Ooher course work: https://github.com/iitaellu/FrontEndPortfolio
