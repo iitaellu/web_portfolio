@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive web portfolio as course project",
   "main": "index.js",
+  "homepage": "https://iitaellu.github.io/Project_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Ida Kirveskoski",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^4.9.2",
     "sass": "^1.57.1"
   }
