@@ -4,7 +4,7 @@ Course project, re-created webportfolio for job searching
 ![image](https://user-images.githubusercontent.com/78799868/214058425-86c5177f-35a7-4d5c-a576-af9203f0cd1c.png)
 
 
-## course information
+## Course information
 Course: Anytime-course: Software Development Skills: Front-End 2022-23
 
 Name: Ida Kirveskoski
@@ -30,7 +30,11 @@ or discriptive picture of company
 
 ### How To run:
 
+Eather press This link: https://iitaellu.github.io/Project_portfolio/index.html. The page will open in browser.
 
+OR
+
+Click the green "Code" button and download zip-file. Unzip the file and open project with Visual Studio Code. Write to the terminal "npm run scss". Press mouse right button on any html-page from dist file and choose "Open With Live Server". If there is no selection like this. install Live Server from Extensions.
 
 ### Links:
 
