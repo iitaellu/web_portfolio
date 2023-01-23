@@ -21,17 +21,40 @@ body {
 h1,h2,h3 {
     margin: 0;
     font-weight: 500;
+    &.slogan{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        padding: 0.6rem;
+        background: rgba(darken($primary-color, 10), 0.5);
+                
+
+        .line{
+            color: $extra-color;
+            font-weight: bold;
+            
+        }
+
+        .style{
+            color:$secondary-color;
+            font-style:italic;
+            text-decoration: underline;
+        }
+        .feading{
+            font-weight: bold;
+            &:hover{
+                
+                color: $extra-color;
+                @include easeOut
+            }
+            
+        }
+    }
     &.lg-heading {
         font-size: 6rem;
     }
     &.sm-heading {
         font-size: 2rem;
         color: set-text-color($primary-color);
-    }
-    &.extra {
-        font-size: 2rem;
-        //color:lighten($extra-color,6);
-        color: $extra-color;
     }
 }
 
@@ -75,9 +98,9 @@ main {
            margin-top: 4rem;
            
 
-           .text-cv,.text-aplication{
+           .text-cv, .text-aplication{
             color: $secondary-color;
-            font-weight: 600;
+            font-weight: bold;
             //color: lighten($secondary-color,5);
            }
             

@@ -93,14 +93,28 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 500; }
+  h1.slogan, h2.slogan, h3.slogan {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 0.6rem;
+    background: rgba(41, 41, 41, 0.5); }
+    h1.slogan .line, h2.slogan .line, h3.slogan .line {
+      color: #C6762F;
+      font-weight: bold; }
+    h1.slogan .style, h2.slogan .style, h3.slogan .style {
+      color: #21BA47;
+      font-style: italic;
+      text-decoration: underline; }
+    h1.slogan .feading, h2.slogan .feading, h3.slogan .feading {
+      font-weight: bold; }
+      h1.slogan .feading:hover, h2.slogan .feading:hover, h3.slogan .feading:hover {
+        color: #C6762F;
+        transition: all 0.3s ease-out; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     font-size: 2rem;
     color: white; }
-  h1.extra, h2.extra, h3.extra {
-    font-size: 2rem;
-    color: #C6762F; }
 
 a {
   color: white;
@@ -127,7 +141,7 @@ main {
     margin-top: 4rem; }
     main .pdfs h2 .text-cv, main .pdfs h2 .text-aplication {
       color: #21BA47;
-      font-weight: 600; }
+      font-weight: bold; }
   main .pdfs .pdf-items {
     list-style: none; }
   main .pdfs a {
@@ -391,8 +405,8 @@ main {
     grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
     grid-template-columns: repeat(1, 1fr); }
   .work-info {
-    grid-template-areas: 'img1 work1' 'img2 work2' 'img3 work3' 'img4 work4' 'img5 work5' 'img6 work6' 'img7 work7';
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-areas: 'img1 work1 work1' 'img2 work2 work2' 'img3 work3 work3' 'img4 work4 work4' 'img5 work5 work5' 'img6 work6 work6' 'img7 work7 work7';
+    grid-template-columns: repeat(3, 1fr); }
   #slideSet {
     height: 400px;
     width: 600px;
@@ -415,7 +429,7 @@ main {
     grid-template-areas: 'bio' 'head1' 'school' 'other' 'head2' 'hobby1' 'hobby2' 'hobby3';
     grid-template-columns: 1fr; }
   .work-info {
-    grid-template-areas: 'img1' 'work1' 'img2' 'work2' 'img3' 'work3' 'img4' 'work4' 'img' 'work5' 'img6' 'work6' 'img7' 'work7';
+    grid-template-areas: 'img1' 'work1' 'img2' 'work2' 'img3' 'work3' 'img4' 'work4' 'img5' 'work5' 'img6' 'work6' 'img7' 'work7';
     grid-template-columns: 1fr; }
     .work-info .images {
       display: block;

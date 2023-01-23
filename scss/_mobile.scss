@@ -69,14 +69,14 @@
 
     .work-info{
         grid-template-areas: 
-        'img1 work1'
-        'img2 work2'
-        'img3 work3'
-        'img4 work4'
-        'img5 work5'
-        'img6 work6'
-        'img7 work7';
-        grid-template-columns: repeat(2, 1fr);
+        'img1 work1 work1'
+        'img2 work2 work2'
+        'img3 work3 work3'
+        'img4 work4 work4'
+        'img5 work5 work5'
+        'img6 work6 work6'
+        'img7 work7 work7';
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #slideSet {
@@ -136,7 +136,7 @@
         'work3'
         'img4'
         'work4'
-        'img'
+        'img5'
         'work5'
         'img6'
         'work6'
