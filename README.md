@@ -39,7 +39,7 @@ Click the green "Code" button and download zip-file. Unzip the file and open pro
 
 Video: https://drive.google.com/file/d/11YbdRlTlcsduHsckeNKEuoaCIu7hGmHP/view?usp=sharing
 
-Learning diery:
+Learning diary:
 
-Ooher course work: https://github.com/iitaellu/FrontEndPortfolio
+Other course work: https://github.com/iitaellu/FrontEndPortfolio
 
