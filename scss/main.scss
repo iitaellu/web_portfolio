@@ -113,9 +113,9 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-    'bioimage bio'
-    'grap1 grap2';
-    grid-template-columns: repeat(2, 1fr);
+    'bioimage bio bio'
+    'grap1 grap2 grap3';
+    grid-template-columns: repeat(3, 1fr);
     
     .bio-image{
     grid-area: bioimage;
@@ -128,12 +128,16 @@ main {
         font-size: 1.5rem
     }
 
-    .sosial-skills{
+    .coding-skills{
         grid-area: grap1;
     }
 
-    .language-skills{
+    .sosial-skills{
         grid-area: grap2;
+    }
+
+    .language-skills{
+        grid-area: grap3;
     }
 
     .skills {

@@ -144,8 +144,8 @@ main {
   margin-top: 1rem;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio' 'grap1 grap2';
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-areas: 'bioimage bio bio' 'grap1 grap2 grap3';
+  grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -153,10 +153,12 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .sosial-skills {
+  .about-info .coding-skills {
     grid-area: grap1; }
-  .about-info .language-skills {
+  .about-info .sosial-skills {
     grid-area: grap2; }
+  .about-info .language-skills {
+    grid-area: grap3; }
   .about-info .skills {
     font-size: 1.5rem;
     background: #4f4f4f;
@@ -189,36 +191,6 @@ main {
   background: #424242;
   color: white; }
 
-/*#slideShow {
-        border: 6px white solid;
-        overflow: hidden;
-        height: 510px;
-        width: 728px;
-        margin-top: 10px;
-        //padding-top: 10px;
-        //margin: 0 auto;        
-    }
-.slide {
-        
-        float: left;
-        height: 510px;
-        width: 728px;
-
-        p{
-
-            font-size: 4rem;
-            padding: 8px 12px;
-            //position: absolute;
-            bottom: 8px;
-            text-align: center;
-
-        }
-    }
-
-.mySlides{
-    width: calc(728px * 3);
-    animation: slide 20s ease infinite;
-}*/
 #slideSet {
   height: 600px;
   width: 800px;
@@ -252,7 +224,7 @@ main {
   margin-top: 3rem;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'life life life' 'bio bio bio' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
+  grid-template-areas: 'life life life' 'head1 head1 head1' 'school school other' 'head2 head2 head2' 'hobby1 hobby2 hobby3';
   grid-template-columns: repeat(3, 1fr); }
   .facts-about .bio {
     grid-area: bio;
@@ -297,10 +269,20 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'img1 work1 work1 work1' 'img2 work2 work2 work2' 'img3 work3 work3 work3' 'img4 work4 work4 work4' 'img5 work5 work5 work5' 'img6 work6 work6 work6' 'img7 work7 work7 work7';
   grid-template-columns: repeat(4, 1fr); }
+  .work-info .image1 {
+    grid-area: img1; }
   .work-info .image2 {
     grid-area: img2; }
   .work-info .image3 {
     grid-area: img3; }
+  .work-info .image4 {
+    grid-area: img4; }
+  .work-info .image5 {
+    grid-area: img5; }
+  .work-info .image6 {
+    grid-area: img6; }
+  .work-info .image7 {
+    grid-area: img7; }
   .work-info .work1 {
     grid-area: work1; }
   .work-info .work2 {
@@ -401,8 +383,8 @@ main {
   .menu-nav {
     height: 400; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'grap1'  'grap2';
-    grid-template-columns: 1fr; }
+    grid-template-areas: 'bioimage bio' 'grap1 grap2' 'grap3 grap4';
+    grid-template-columns: 2fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .facts-about {
@@ -424,6 +406,9 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  .about-info {
+    grid-template-areas: 'bioimage'  'bio' 'grap1'  'grap2' 'grap3';
+    grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; }
   .facts-about {
