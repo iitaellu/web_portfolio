@@ -6,7 +6,9 @@ Course project, re-created webportfolio for job searching
 
 ## course information
 Course: Anytime-course: Software Development Skills: Front-End 2022-23
+
 Name: Ida Kirveskoski
+
 Project: Course Project
 
 ### About Website:
@@ -14,10 +16,16 @@ Project: Course Project
 This is responsive webporfolio which has six pages in it:
 
 -Home page with my name, role, slogan, links to social medias and downloadable cv and application
+
 -About me -page with profile picture, bio and graphics about my coding, sosial and language skills.
+
 -Fan facts  -page with three pictures slideshow and five extra info box about me
+
 -Contact -page which has my email, phonenumber and address
--Work -page to tell shortly my job experience and role in each job. Also either logos of companys or discriptive picture of company
+
+-Work -page to tell shortly my job experience and role in each job. Also either logos of companys 
+or discriptive picture of company
+
 -School -page where is some my school project with picture, short discription and link to each GitHub page
 
 ### How To run:
