@@ -1,4 +1,4 @@
-# Project_portfolio
+# Web_portfolio
 Course project, re-created webportfolio for job searching
 
 ![image](https://user-images.githubusercontent.com/78799868/214058425-86c5177f-35a7-4d5c-a576-af9203f0cd1c.png)
