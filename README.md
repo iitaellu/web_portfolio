@@ -29,7 +29,7 @@ This is responsive web portfolio which has six pages in it:
 
 ### How To run:
 
-Eather press This link: https://iitaellu.github.io/Project_portfolio/index.html. The page will open in browser.
+Eather press This link: [https://iitaellu.github.io/Project_portfolio/index.html](https://iitaellu.github.io/web_portfolio/). The page will open in browser.
 
 OR
 
